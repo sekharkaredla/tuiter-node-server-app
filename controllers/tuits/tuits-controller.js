@@ -28,9 +28,15 @@ const deleteTuit = (req, res) => {
     res.sendStatus(200);
 }
 
+const resetTuits = (req, res) => {
+    tuits = posts;
+    res.json(tuits)
+}
+
 
 export default (app) => {
     app.post('/api/tuits', createTuit);
+    app.get('/api/tuits/reset', resetTuits);
     app.get('/api/tuits', findTuits);
     app.put('/api/tuits/:tid', updateTuit);
     app.delete('/api/tuits/:tid', deleteTuit);
