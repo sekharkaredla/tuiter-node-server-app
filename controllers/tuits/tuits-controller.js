@@ -1,6 +1,7 @@
 import posts from "./tuits.js";
 
 let tuits = posts;
+const initialState = [...tuits]
 
 const createTuit = (req, res) => {
     const newTuit = req.body;
@@ -29,7 +30,7 @@ const deleteTuit = (req, res) => {
 }
 
 const resetTuits = (req, res) => {
-    tuits = posts;
+    tuits = [...initialState];
     res.json(tuits)
 }
 
