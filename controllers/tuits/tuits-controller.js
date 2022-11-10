@@ -7,7 +7,7 @@ const createTuit = (req, res) => {
     newTuit._id = (new Date()).getTime() + '';
     newTuit.likes = 0;
     newTuit.liked = false;
-    tuits.push(newTuit);
+    tuits.unshift(newTuit);
     res.json(newTuit);
 }
 
@@ -24,7 +24,7 @@ const updateTuit = (req, res) => {
 
 const deleteTuit = (req, res) => {
     const tuitdIdToDelete = req.params.tid;
-    tuits = tuits.filter((t) => String(t._id) !== tuitdIdToDelete);
+    tuits = tuits.filter((t) => t._id !== tuitdIdToDelete);
     res.sendStatus(200);
 }
 

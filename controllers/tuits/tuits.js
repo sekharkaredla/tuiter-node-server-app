@@ -1,6 +1,6 @@
 export default [
     {
-        "_id": 1,
+        "_id": "1",
         "topic": "Elon Musk",
         "time": "2h",
         "title": "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
@@ -14,7 +14,7 @@ export default [
         "liked": true
     },
     {
-        "_id": 2,
+        "_id": "2",
         "topic": "",
         "userName": "JavaScript",
         "time": "1 day",
