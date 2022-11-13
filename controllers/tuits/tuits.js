@@ -11,6 +11,7 @@ export default [
         "replies": 4231,
         "retuits": 3500,
         "likes": 665,
+        "dislikes": 89,
         "liked": true
     },
     {
@@ -26,6 +27,7 @@ export default [
         "replies": 965,
         "retuits": 2407,
         "likes": 4962,
+        "dislikes": 74,
         "liked": false
     }
 ];
