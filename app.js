@@ -6,7 +6,7 @@ import TuitsController from "./controllers/tuits/tuits-controller.js";
 import mongoose from "mongoose";
 
 const app = express()
-mongoose.connect('mongodb://localhost:27017/tuiter');
+mongoose.connect('mongodb://0.0.0.0:27017/tuiter');
 app.use(cors())
 app.use(express.json());
 
