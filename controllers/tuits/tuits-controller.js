@@ -32,8 +32,8 @@ const deleteTuit = async (req, res) => {
 }
 
 export default (app) => {
-    app.post('/api/tuits', createTuit);
-    app.get('/api/tuits', findTuits);
-    app.put('/api/tuits/:tid', updateTuit);
-    app.delete('/api/tuits/:tid', deleteTuit);
+    app.post('/api/a9/tuits', createTuit);
+    app.get('/api/a9/tuits', findTuits);
+    app.put('/api/a9/tuits/:tid', updateTuit);
+    app.delete('/api/a9/tuits/:tid', deleteTuit);
 }
