@@ -2,7 +2,7 @@ import express from 'express'
 import cors from 'cors'
 import HelloController from "./controllers/hello-controller.js"
 import UserController from "./controllers/users/users-controller.js"
-import TuitsController from "./controllers/tuits/tuits-controller.js";
+import TuitsA9Controller from "./controllers/tuits/tuits-a9-controller.js";
 import TuitsA8Controller from "./controllers/tuits/tuits-a8-controller.js";
 
 import mongoose from "mongoose";
@@ -17,7 +17,7 @@ app.use(express.json());
 
 HelloController(app)
 UserController(app)
-TuitsController(app)
+TuitsA9Controller(app)
 TuitsA8Controller(app)
 
 app.listen(process.env.PORT || 4000)
